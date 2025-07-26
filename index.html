@@ -1,0 +1,122 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>IHR Services</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="navbar desktop-menu">
+      <div class="logo">
+        <img src="images/logo.png" alt="my-logo" sizes="40x40"/>
+      </div>
+      <div id="menuSection" class="menu-sec">
+        <ul class="nav-menu">
+          <li><a class="active" href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Services</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </div>
+
+    </div>
+
+    <div onclick="closeMobMenuToggle()" id="mobMenuCont" class="mob-menu-container"></div>
+
+    <div id="mobMenuWrap" class="mob-menu-wrap">
+      <div class="menu-content">
+        <div class="menu-items">
+          <ul class="nav-menu">
+            <li><a class="active" href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="mobile-menu">
+      <div class="logo">
+        <img src="images/logo.png" alt="my-logo" />
+      </div>
+      <button onclick="mobMenuToggle()" class="menu">Menu</button>
+    </div>
+
+    <!-- New Section 1 -->
+    <section class="secti">
+      <h2>About us</h2>
+      <h3>International Home Return Services</h3>
+      <div class="section-content">
+        <img src="images/logo.png" alt="logo" />
+        <p>
+          IHRS is a leading startup in the logistics services that have a strong vue on the world 
+          events,soon we will have a lot of contracts with govs in north america and across europe .
+        </p>
+        <h4>we basically deport ppl</h4>
+      </div>
+    </section>
+    <section class="section-one">
+      <h2>Our Mission</h2>
+      <div class="section-content">
+        <img src="images/ice header.jpeg" alt="Our Mission" />
+        <p>
+          We aim to deliver outstanding services with a focus on quality and reliability.
+        </p>
+      </div>
+    </section>
+
+    <!-- New Section 2 -->
+    <section class="section-two">
+      <h2>What We Offer</h2>
+      <h3><u>You catch em ,we deliver em</u></h3>
+      <div class="section-content">
+        <img src="images/depo.jpg" alt="Services" />
+        <p>
+          Explore a wide range of services tailored to meet your needs and make your country great again.
+        </p>
+      </div>
+    </section>
+
+    <!-- New Section 3 -->
+    <section class="section-three">
+      <h2>Why Choose Us?</h2>
+      <div class="section-content">
+        <img src="images/money.avif" alt="Why Choose Us" />
+        <p>
+          We prioritize money and time, ensuring that you get the best value for your investment.
+          that make us very reliable not like the immegrant loving suckers.
+        </p>
+      </div>
+    </section>
+
+    <div class="footer">
+      <a href="https://discord.gg/FuSU8Ej4" target="_blank" class="discord-link">
+        <i class="fab fa-discord"></i>
+      </a>
+      <p>
+        Copyright © 2021 | Developed by <b>NOW</b>
+      </p>
+    </div>
+
+    <script type="text/javascript">
+      function mobMenuToggle() {
+        document.getElementById("mobMenuCont").classList.toggle("displayon");
+        document.getElementById("mobMenuWrap").classList.toggle("displayon");
+        document.body.classList.toggle("no-scroll");
+      }
+
+      function closeMobMenuToggle() {
+        document.getElementById("mobMenuCont").classList.remove("displayon");
+        document.getElementById("mobMenuWrap").classList.remove("displayon");
+        document.body.classList.remove("no-scroll");
+      }
+    </script>
+  </body>
+</html>
